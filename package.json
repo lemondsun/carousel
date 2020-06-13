@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "enzyme-adapter-react-16": "^1.15.2",
     "figlet": "^1.4.0",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -46,5 +47,11 @@
   },
   "transform": {
     "\\.js$": "<rootDir>/node_modules/babel-jest"
-  }
+  },
+  "wallaby": {
+    "autoDetect": true,
+    "trace": true
+  },
+  "plugins": ["transform-object-rest-spread"]
+
 }
